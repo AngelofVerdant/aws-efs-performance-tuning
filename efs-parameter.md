@@ -52,13 +52,13 @@ time dd if=/dev/zero of=/mnt/efs/dd/10G-dd-$(date +%Y%m%d%H%M%S.%3N) bs=1M count
 
 - The following list explains the various options you just used with the dd command:
 
-time tracks how long the command takes to run to completion.
-if= defines the input file to read from.
-of= defines the file to write to.
-bs= defines the number of bytes to read and write at a time.
-count= specifies the the number of blocks to write.
-conv=fsync specifies that metedata should be written as well.
-The end result of the command is that 10,000 1MB blocks of data are written to the EFS file share for a total of 10GB.
+- time tracks how long the command takes to run to completion.
+- if= defines the input file to read from.
+- of= defines the file to write to.
+- bs= defines the number of bytes to read and write at a time.
+- count= specifies the the number of blocks to write.
+- conv=fsync specifies that metedata should be written as well.
+- The end result of the command is that 10,000 1MB blocks of data are written to the EFS file share for a total of 10GB.
 
 N/B:
 
