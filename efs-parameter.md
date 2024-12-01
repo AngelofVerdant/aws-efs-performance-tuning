@@ -7,7 +7,7 @@ How the number of threads used to write data affects Amazon EFS performance
 directory=$(wget -q -O - http://169.254.169.254/latest/meta-data/instance-id)
 ```
 
-Note: The Instance ID is used to identify a unique directory on the EFS file share for each instance in the lab
+Note: The Instance ID is used to identify a unique directory on the EFS file share for each instance 
 
 3. Enter the following command to use touch with a single thread to generate 1024 zero-byte files in the /mnt/efs/01/touch directory:
 
